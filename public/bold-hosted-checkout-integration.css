@@ -1,0 +1,9 @@
+.steplist > li {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.steplist > li > button {
+    width: 15em;
+    text-align: left;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bold Checkout + commercetools using Fetch</title>
+    <meta charset="utf8" />
+    <link href="./bold-hosted-checkout-integration.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Bold Checkout + commercetools</h1>
+    <h2>Minimal frontend integration example</h2>
+    <p>
+        In this example, we showcase a simple way to integrate Bold Hosted Checkout into a commercetools storefront. The
+        approach is simple: create a commercetools access token and cart, then use those (plus a handful of
+        configuration values) to generate a unique checkout URL for Bold Checkout. Finally, redirect the user to the
+        generated URL and Bold Checkout's hosted frontend will take over from there.
+    </p>
+
+    <h3>Steps</h3>
+    <ol class="steplist">
+        <li>
+            <button id="action-fetchtoken" type="button">Fetch commercetools Token</button>
+            <span class="result" id="result-fetchtoken">&nbsp;</span>
+        </li>
+        <li>
+            <button id="action-queryproducts" type="button">Query Product Projections</button>
+            <span class="result" id="result-queryproducts">&nbsp;</span>
+        </li>
+        <li>
+            <button id="action-createcart" type="button">Create My Cart</button>
+            <span class="result" id="result-createcart">&nbsp;</span>
+        </li>
+        <li>
+            <button id="action-addlineitem" type="button">Add Line Item to Cart</button>
+            <span class="result" id="result-addlineitem">&nbsp;</span>
+        </li>
+        <li>
+            <button id="action-redirecttocheckout" type="button" disabled>Redirect to Bold Checkout</button>
+        </li>
+    </ol>
+
+    <h3>Output Log</h3>
+    <ul id="output-log"></ul>
+
+    <script src="bold-hosted-checkout-integration.bundle.js"></script>
+</body>
+
+</html>

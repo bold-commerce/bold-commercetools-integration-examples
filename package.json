@@ -1,0 +1,31 @@
+{
+  "name": "@boldcommerce/commercetools-examples",
+  "version": "1.0.0",
+  "description": "Sample project showcasing frontend integrations between Bold Commerce and commercetools",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "postinstall": "husky install"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv-webpack": "7.1.0",
+    "eslint-plugin-n": "^15.2.0",
+    "husky": "^8.0.1",
+    "webpack": "5.70.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.7.4"
+  },
+  "dependencies": {
+    "eslint": "8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "2.6.2"
+  }
+}
